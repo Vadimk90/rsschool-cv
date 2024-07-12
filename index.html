@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="/assets/ico/cv.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main-container">
+            <section class="section" id="profile">
+                <img src="/assets/img/1720765339958.jpg" alt="my photo" width="200px" height="300px">
+                <div class="main-text-container">
+                    <h1 class="section-title">
+                        Hello!
+                    </h1>
+                    <h2 class="my-name">My name is Vadim!</h2>
+                </div>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">
+                    About me:
+                </h2>
+                <p>
+                    I am an accountant with more than 10 years of experience in finance. For the last 3 years, I have been closely involved in the problems of accounting for fixed assets and materials in a large company. I try to optimize complex processes, I study automation mechanisms and just try to make the life of other accountants easier. For the last six months I have been actively studying front-end development.I expect that the knowledge I gained in the field of finance will help me create useful applications
+                </p>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">
+                    My contacts:
+                </h2>
+                <p>
+                    <span class="contacts-tags">Address:</span> M. Ulugbek av.49/33, Tashkent, Uzbekistan <br>
+                    <span class="contacts-tags">Phone:</span> +99890 1762015 <br>
+                    <span class="contacts-tags">E-mail:</span> vadimkravtsov2012@gmail.com <br>
+                    <span class="contacts-tags">LinkedIn:</span> <a href="https://www.linkedin.com/in/vadim-kravtsov/?locale=en_US">[Vadim Kravtsov]</a> <br>
+                </p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">
+                    My humble skills:
+                </h2>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>GIT</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">
+                    Useful code:
+                </h2>
+                <p>
+                    Function converts dash/underscore delimited words into camel casing.
+                    The first word within the output should be capitalized only if the original word was capitalized. 
+                    The next words should be always capitalized.
+                    <code class="code-example">
+                        <pre>
+    function toCamelCase(str){
+    
+    let result = str.replace(/-|_/gi,' ').split(' ');
+    for (i = 1; i < result.length; i++){
+    result[i] = result[i].charAt(0).toUpperCase() + result[i].slice(1);
+    }
+    return result.join('');
+    }
+                        </pre>
+                    </code>
+                </p>
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-title">
+                    Courses:
+                </h2>
+                <p>
+                    PASV school: Frontend basic
+                    <br>
+                    Codecademy: Frontend engeneer, carrier path
+                </p>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">
+                    My projects:
+                </h2>
+                <p>
+                    <a href="https://github.com/Vadimk90/piano-play-js">Interactive game</a> to help beginner-level piano students. A piano player with DOM events in JavaScript!
+                    <br>
+                    Credit card number <a href="https://github.com/Vadimk90/credit_card_checker">checker</a>
+                    <br>
+                    <a href="https://github.com/Vadimk90/begginer-cheatsheet">Text cheatsheet</a> in CSS for begginers
+                </p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">
+                    Education:
+                </h2>
+                <p>Bachelor, Tashkent State University of Economics (Economist)</p>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">
+                    Languages:
+                </h2>
+            <p>
+                Russian (Native)
+                <br>
+                English (Intermidiate)
+            </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>2024 <a href="https://github.com/Vadimk90">Vadim Kravtsov</p></a>
+            <a href="https://rs.school/courses/javascript-preschool-ru"><img src="/assets/ico/rs-school-logo.svg" alt="logo" width="60px"></a>
+        </div>
+    </footer>
+</body>
+</html>
