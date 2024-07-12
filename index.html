@@ -6,6 +6,7 @@
     <title>cv</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="/assets/ico/cv.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -28,21 +29,13 @@
     <main class="main">
         <div class="main-container">
             <section class="section" id="profile">
-                <h1 class="section-title">
-                    Hello!
-                    My name is Vadim!
-                </h1>
-            </section>
-            <section class="section" id="contacts">
-                <h2 class="section-title">
-                    My contacts:
-                </h2>
-                <p>
-                    <span class="contacts-tags">Address:</span> M. Ulugbek av.49/33, Tashkent, Uzbekistan
-                    <span class="contacts-tags">Phone:</span> +99890 1762015
-                    <span class="contacts-tags">E-mail:</span> vadimkravtsov2012@gmail.com
-                    <span class="contacts-tags"LinkedIn:</span> [Vadim Kravtsov](https://www.linkedin.com/in/vadim-kravtsov/?locale=en_US)
-                </p>
+                <img src="/assets/img/1720765339958.jpg" alt="my photo" width="200px" height="300px">
+                <div class="main-text-container">
+                    <h1 class="section-title">
+                        Hello!
+                    </h1>
+                    <h2 class="my-name">My name is Vadim!</h2>
+                </div>
             </section>
             <section class="section" id="summary">
                 <h2 class="section-title">
@@ -50,6 +43,17 @@
                 </h2>
                 <p>
                     I am an accountant with more than 10 years of experience in finance. For the last 3 years, I have been closely involved in the problems of accounting for fixed assets and materials in a large company. I try to optimize complex processes, I study automation mechanisms and just try to make the life of other accountants easier. For the last six months I have been actively studying front-end development.I expect that the knowledge I gained in the field of finance will help me create useful applications
+                </p>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">
+                    My contacts:
+                </h2>
+                <p>
+                    <span class="contacts-tags">Address:</span> M. Ulugbek av.49/33, Tashkent, Uzbekistan <br>
+                    <span class="contacts-tags">Phone:</span> +99890 1762015 <br>
+                    <span class="contacts-tags">E-mail:</span> vadimkravtsov2012@gmail.com <br>
+                    <span class="contacts-tags">LinkedIn:</span> <a href="https://www.linkedin.com/in/vadim-kravtsov/?locale=en_US">[Vadim Kravtsov]</a> <br>
                 </p>
             </section>
             <section class="section" id="skills">
@@ -72,7 +76,7 @@
                     Function converts dash/underscore delimited words into camel casing.
                     The first word within the output should be capitalized only if the original word was capitalized. 
                     The next words should be always capitalized.
-                    <code>
+                    <code class="code-example">
                         <pre>
     function toCamelCase(str){
     
@@ -91,34 +95,47 @@
                     Courses:
                 </h2>
                 <p>
-                    -PASV school: Frontend basic
-                </p>
-                <p>
-                    -Codecademy: Frontend engeneer, carrier path
+                    PASV school: Frontend basic
+                    <br>
+                    Codecademy: Frontend engeneer, carrier path
                 </p>
             </section>
             <section class="section" id="projects">
                 <h2 class="section-title">
                     My projects:
                 </h2>
+                <p>
+                    <a href="https://github.com/Vadimk90/piano-play-js">Interactive game</a> to help beginner-level piano students. A piano player with DOM events in JavaScript!
+                    <br>
+                    Credit card number <a href="https://github.com/Vadimk90/credit_card_checker">checker</a>
+                    <br>
+                    <a href="https://github.com/Vadimk90/begginer-cheatsheet">Text cheatsheet</a> in CSS for begginers
+                </p>
             </section>
             <section class="section" id="education">
                 <h2 class="section-title">
                     Education:
                 </h2>
+                <p>Bachelor, Tashkent State University of Economics (Economist)</p>
             </section>
             <section class="section" id="languages">
                 <h2 class="section-title">
                     Languages:
                 </h2>
-                <p>Russian (Native)</p>
-                <p>English (Intermidiate)</p>
+            <p>
+                Russian (Native)
+                <br>
+                English (Intermidiate)
+            </p>
             </section>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="container"></div>
+        <div class="footer-container">
+            <p>2024 <a href="https://github.com/Vadimk90">Vadim Kravtsov</p></a>
+            <a href="https://rs.school/courses/javascript-preschool-ru"><img src="/assets/ico/rs-school-logo.svg" alt="logo" width="60px"></a>
+        </div>
     </footer>
 </body>
 </html>

@@ -28,16 +28,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 * {
     box-sizing: border-box;
-    background-color: var(--solid-black);
-    color: var(--gray);
+
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
+    background-color: var(--solid-black);
+    color: var(--gray);
 }
 
 .container {
@@ -69,22 +71,147 @@ html {
 .main-container {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .section {
     width: 50%;
+    margin: 30px 0px;
+    padding: 0 20px;
 }
 
 @media (max-width: 768px) {
     .section {
       width: 100%;
     }
-  }
+}
 
 .section-title {
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: #829985;
+    font-size: 2rem;
+    color: var(--dark-blue);
 }
+
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#profile img{
+    border-radius: 25%;
+}
+
+#profile h1 {
+    color: var(--light-blue);
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 1px;
+}
+
+.main-text-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+}
+
+.my-name {
+    color: var(--light-blue);
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1px;
+}
+
+p {
+    color: var(--gray);
+}
+
+#summary p {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-left: solid 5px var(--dark-blue);
+}
+
+#contacts p {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-left: solid 5px var(--dark-blue);
+    line-height: 2rem;
+}
+
+.contacts-tags {
+    color: var(--light-blue);
+}
+
+.skills-list {
+    font-size: 1.5rem;
+    padding: 20px;
+    line-height: 2rem;
+}
+
+.skills-list li::marker {
+    color: var(--light-blue);
+}
+
+#code p {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-left: solid 5px var(--dark-blue);
+}
+
+.code-example {
+    color: var(--light-blue);
+}
+
+#courses p {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-left: solid 5px var(--dark-blue);
+}
+
+#projects p {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-left: solid 5px var(--dark-blue);
+}
+
+#projects a {
+    color: var(--light-blue);
+}
+
+#education p {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-left: solid 5px var(--dark-blue);
+}
+
+#languages p {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-left: solid 5px var(--dark-blue);
+}
+
+.footer-container {
+    max-height: 100px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.footer-container p {
+    font-family: "Oswald", sans-serif;
+    color: var(--light-black);
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: var(--light-black);
+    margin: auto 0;
+}
+
