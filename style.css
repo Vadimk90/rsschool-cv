@@ -71,7 +71,8 @@ html {
 .main-container {
     display: flex;
     flex-wrap: wrap;
-
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .section {
@@ -202,6 +203,8 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer-container p {
